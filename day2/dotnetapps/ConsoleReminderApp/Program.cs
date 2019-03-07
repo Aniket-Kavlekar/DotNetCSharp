@@ -13,14 +13,14 @@ struct Date
 
 class CurrentDate
 {
-    public Date date { get; private set; }
+    public Date date { get; set; }
 
+    // constructor 
     public CurrentDate()
     {
         DateTime dateTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, 
             TimeZoneInfo.FindSystemTimeZoneById("India Standard Time"));
-         
-
+        date = new Date { Day = dateTime.Day, Month = dateTime.Month, Year = dateTime.Year }; 
     }
 }
 
@@ -31,7 +31,8 @@ class ReminderData
     //public float HourMinute { get; set; }
     public string Message { get; set; }
 
-   
+    //public 
+
 }
 
 
