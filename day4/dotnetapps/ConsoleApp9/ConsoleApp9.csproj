@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CD8DDA1-CCE9-4A7C-8063-B0AAA4E18AE3}</ProjectGuid>
+    <ProjectGuid>{E26BA0E1-A2AD-4AD2-9846-A466E186B2D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleReminderApp</RootNamespace>
-    <AssemblyName>ConsoleReminderApp</AssemblyName>
+    <RootNamespace>ConsoleApp9</RootNamespace>
+    <AssemblyName>ConsoleApp9</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Factory">
+      <HintPath>..\Factory\bin\Debug\Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="LoggerInterface">
+      <HintPath>..\LoggerInterface\bin\Debug\LoggerInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="StackLibrary">
+      <HintPath>..\StackLibrary\bin\Debug\StackLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,7 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
